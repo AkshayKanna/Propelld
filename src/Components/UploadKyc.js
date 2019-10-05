@@ -73,8 +73,9 @@ export default class UploadKyc extends React.Component {
                         <h3>Is Applicant Aadhar linked to Moblie Number ?</h3>
                     </div>
                     <div>
-        { this.state.yes==false ? <input type="radio" name="yes" value={this.state.yes} onClick={this.get_result} checked="false" /> :<input type="radio" name="yes" value={this.state.yes} onClick={this.get_result} checked="true" />} YES<br></br> 
-                        <input type="radio" name="no" value={this.state.no} onClick={this.get_result_1} /> NO<br></br>
+        { this.state.yes==false ? <input type="radio" name="yes" value={this.state.yes} onClick={this.get_result}  /> :<input type="radio" name="yes" value={this.state.yes} onClick={this.get_result} checked />} YES<br></br> 
+        { this.state.no==false ? <input type="radio" name="no" value={this.state.no} onClick={this.get_result_1}  /> :<input type="radio" name="no" value={this.state.no} onClick={this.get_result} checked />} NO<br></br>
+                        {/* <input type="radio" name="no" value={this.state.no} onClick={this.get_result_1} /> NO<br></br> */}
                     </div>
 
                     {this.state.yes ? (
@@ -83,7 +84,7 @@ export default class UploadKyc extends React.Component {
                                 <div class="form-group mt-5">
                                     <label for="phone">PHONE</label>
                                     <input type="text" value={this.state.phone} onChange={this.check_phone} name="phone" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="ENTER NUMBER" />
-                                    <button type="button" class="btn btn-primary rounded-pill mt-5" onClick={this.get_phone_number}>CHECK</button>
+                                    <Link to="/upload_document" class="btn btn-primary rounded-pill mt-5" onClick={this.get_phone_number}>CHECK</Link>
                                 </div>
                             </div>
                         </div>
