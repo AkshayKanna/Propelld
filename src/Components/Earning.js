@@ -22,7 +22,6 @@ export default class Earning extends React.Component {
 
     get_result = (e) => {
         e.preventDefault()
-        // const PANNumber = { PANNumber: this.state.PANNumber };
         console.log(this.state)
 
         var body = {
@@ -60,11 +59,6 @@ export default class Earning extends React.Component {
             array1: [...this.state.array1, obj]
         })
     }
-
-    // get_alert =()=>{
-    //     alert("sorry monthly inc should be lesser than 10000")
-    // }
-    // {this.state.monthly <= 10000 ?<Link to="/congrats" class="btn btn-primary rounded-pill" onClick={this.get_result_final}>SUBMIT</Link>:<Link class="btn btn-primary rounded-pill"  onClick={this.get_alert}>SUBMIT</Link>} 
 
     render() {
         console.log(this.state.array)
@@ -145,10 +139,6 @@ export default class Earning extends React.Component {
                 <div className="container">
                     <div className="row">
                         <form className="col-lg-5 col-sm-5 col-md-6" >
-                            {/* <div class="form-group mt-5">
-                                <label for="age">I AM </label>
-                                <input type="text" value={this.state.age} onChange={this.check_pan} name="age" class="form-control" id="PANNumber" aria-describedby="emailHelp" placeholder="ENTER AGE" />
-                            </div> */}
                             <div class="form-group mt-5">
                                 <label for="age">PROFESSION </label>
                                 <input type="text" value={this.state.profession} onChange={this.check_pan} name="profession" class="form-control" id="profession" aria-describedby="emailHelp" placeholder="ENTER PROFESSION" />
@@ -158,32 +148,9 @@ export default class Earning extends React.Component {
                                 <input type="text" value={this.state.montly} onChange={this.check_pan} name="montly" class="form-control" id="montly" aria-describedby="emailHelp" placeholder="ENTER MONTLY" />
                             </div>
                             <Link to="/congrats" class="btn btn-primary rounded-pill" onClick={this.get_result_final}>SUBMIT</Link>
-                            {/* {this.state.monthly <= 10000 ?<Link to="/congrats" class="btn btn-primary rounded-pill" onClick={this.get_result_final}>SUBMIT</Link>:<Link class="btn btn-primary rounded-pill"  onClick={this.get_alert}>SUBMIT</Link>}  */}
                         </form>
                     </div>
                 </div>
-
-                {/* <div className="container">
-                    <div className="row">
-                        {this.state.array.map((items, index) => {
-                            return (
-                                <div class="col-sm-6 mt-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h3 class="card-title">NAME: {items.PayLoad.Name}</h3>
-                                            <hr></hr>
-                                            <h5 class="card-text">ID: {items.PayLoad.FatherName}</h5>
-                                            <hr></hr>
-                                            <h5 class="card-text">QUANTITY: {items.PayLoad.DateOfBirth}</h5>
-                                            <hr></hr>
-                                            <h5 className="card-text">PAN NUMBER: {items.PayLoad.PANNumber}</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div> */}
             </div>
         )
     }

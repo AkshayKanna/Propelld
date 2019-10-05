@@ -4,7 +4,6 @@ import Homepage from "./Homepage"
 import ApplyLoan from "./ApplyLoan"
 import Earning from "./Earning"
 import Congrats from "./Congrats"
-// import CoApplicant from "./CoApplication"
 import UploadKyc from "./UploadKyc"
 import UploadDcouments from './UploadDocuments';
 import NotEarning from "./NotEarning"

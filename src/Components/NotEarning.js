@@ -105,7 +105,6 @@ render() {
                             <label for="PANNumber">PAN NUMBER</label>
                             <input type="text" value={this.state.age} onChange={this.check_details} name="age" class="form-control" id="age" aria-describedby="emailHelp" placeholder="ENTER AGE" />
                         </div>
-                        
 
                         <button type="button" class="btn btn-primary rounded-pill" onClick={this.get_result}>CO-APPLICATION FORM</button>
                         
@@ -113,34 +112,6 @@ render() {
                     </form>
                 </div>
             </div>
-            {/* <div className="container-fluid">
-                    <table class="table text-center table-bordered">
-                        <thead class="thead-light ">
-                            <tr>
-                                <th scope="col"> NAME</th>
-                                <th scope="col"> PRODUCT ID</th>
-                                <th scope="col">PRODUCT QUANTITY</th>
-                                <th scope="col">BRAND</th>
-                            </tr>
-                        </thead>
-                        <tbody >
-
-                            {this.state.array1.map((items, index) => {
-                                return (
-                                    <React.Fragment>
-                                        <tr>
-                                            <td>{items.}</td>
-                                            <td>{items.product_id}</td>
-                                            <td>{items.product_quantity}</td>
-                                            <td>{items.brand}</td>
-                                        </tr>
-                                    </React.Fragment>
-                                );
-                            })
-                            }
-                        </tbody>
-                    </table>
-                </div> */}
         </div>
     );
 }
