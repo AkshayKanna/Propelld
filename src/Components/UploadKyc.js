@@ -24,6 +24,7 @@ export default class UploadKyc extends React.Component {
         }
         this.setState({
             yes: true,
+            no:false,
             array: [...this.state.array, object],
         });
        
@@ -37,6 +38,7 @@ export default class UploadKyc extends React.Component {
     get_result_1 = (e) => {
         this.setState({
             no: true,
+            yes:false
         });
     }
 
@@ -71,7 +73,7 @@ export default class UploadKyc extends React.Component {
                         <h3>Is Applicant Aadhar linked to Moblie Number ?</h3>
                     </div>
                     <div>
-                        <input type="radio" name="yes" value={this.state.yes} onClick={this.get_result} /> YES<br></br>
+        { this.state.yes==false ? <input type="radio" name="yes" value={this.state.yes} onClick={this.get_result} checked="false" /> :<input type="radio" name="yes" value={this.state.yes} onClick={this.get_result} checked="true" />} YES<br></br> 
                         <input type="radio" name="no" value={this.state.no} onClick={this.get_result_1} /> NO<br></br>
                     </div>
 

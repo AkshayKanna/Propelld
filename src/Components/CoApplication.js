@@ -2,6 +2,7 @@ import React from "react"
 import axios from "axios"
 import { Route, Redirect, Link } from 'react-router-dom';
 
+{/*Component for Not Earning Person Using Co Applicant */}
 export default class NotEarning extends React.Component {
     constructor(props) {
         super(props);
